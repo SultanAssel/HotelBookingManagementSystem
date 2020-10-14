@@ -2,10 +2,17 @@
 
 <div id="testimonial">
   <div class="container">
+
+
+
     <div class="row">
+
       <div class="col-md-12">
         <div class="section-title text-center">
+
           <h2>Happy Customer Says...</h2>
+
+
         </div>
       </div>
     </div>
@@ -33,10 +40,27 @@
           </blockquote>
           <p class="author"><cite>Jane Doe</cite></p>
         </div>
+
+
+
+
+
+
+        <input type="text" #pcomponent (keyup)="0"/>
+
+
+
+        <app-add-comments [PData]="pcomponent.value" (childEvent)="CData=$event">
+        </app-add-comments>
+
       </div>
+
     </div>
   </div>
 </div>
+
+
+
 <div id="fh5co-blog-section">
   <div class="container">
     <div class="row">
@@ -86,5 +110,7 @@
     </div>
   </div>
 </div>
+
+
 
 
