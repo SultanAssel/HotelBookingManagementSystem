@@ -1,0 +1,64 @@
+<div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+  <div class="container-contact3">
+    <div class="wrap-contact3">
+      <form #userForm="ngForm" role="form" class="contact3-form validate-form">
+        {{ userForm.value | json }}
+
+
+
+					<span class="contact3-form-title">
+						Contact Us
+					</span>
+
+
+
+        <div class="wrap-input3 validate-input" data-validate="Name is required">
+          <input class="input3" type="text" name="name" placeholder="Your Name" ngModel/>
+          <span class="focus-input3"></span>
+        </div>
+
+        <div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+          <input class="input3" type="email" name="email" placeholder="Your Email" ngModel/>
+          <span class="focus-input3"></span>
+        </div>
+
+        <div class="wrap-input3 input3-select">
+          <div>
+            <select class="selection-2" name="service">
+              <option>Needed Services</option>
+              <option>eCommerce Bussiness</option>
+              <option>UI/UX Design</option>
+              <option>Online Services</option>
+            </select>
+          </div>
+          <span class="focus-input3"></span>
+        </div>
+
+        <div class="wrap-input3 input3-select">
+          <div>
+            <select class="selection-2" name="budget">
+              <option>Budget</option>
+              <option>1500 $</option>
+              <option>2000 $</option>
+              <option>3000 $</option>
+            </select>
+          </div>
+          <span class="focus-input3"></span>
+        </div>
+
+        <div class="wrap-input3 validate-input" data-validate = "Message is required">
+          <textarea class="input3" name="message" placeholder="Your Message" ngModel> </textarea>
+          <span class="focus-input3"></span>
+        </div>
+
+        <div class="container-contact3-form-btn">
+          <button class="contact3-form-btn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
