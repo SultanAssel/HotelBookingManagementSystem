@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotelComponent implements OnInit {
 
+  public CData: number;
   constructor() { }
 
   ngOnInit(): void {
