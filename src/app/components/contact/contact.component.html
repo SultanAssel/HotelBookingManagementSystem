@@ -2,7 +2,8 @@
   <div class="container-contact3">
     <div class="wrap-contact3">
       <form #userForm="ngForm" role="form" class="contact3-form validate-form">
-        {{ userForm.value | json }}
+
+
 
 
 
@@ -13,12 +14,40 @@
 
 
         <div class="wrap-input3 validate-input" data-validate="Name is required">
+
+
           <input class="input3" type="text" name="name" placeholder="Your Name" ngModel/>
+
+
+
+          <div ng-app="myApp" ng-controller="myCtrl">
+            Name: <input ng-model="firstname">
+            <h1>{{firstname}}</h1>
+          </div>
+
+          <!--<script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function($scope) {
+              $scope.firstname = "John";
+              $scope.lastname = "Doe";
+            });
+          </script>-->
+
+
+
+
+
           <span class="focus-input3"></span>
         </div>
 
         <div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-          <input class="input3" type="email" name="email" placeholder="Your Email" ngModel/>
+          <input class="input3" type="email" name="email" placeholder="Your Email" ngModel />
+
+          <div ng-app="myApp" ng-controller="myCtrl">
+            Email: <input ng-model="email">
+            <h1>{{email}}</h1>
+
+          </div>
           <span class="focus-input3"></span>
         </div>
 
@@ -48,6 +77,11 @@
 
         <div class="wrap-input3 validate-input" data-validate = "Message is required">
           <textarea class="input3" name="message" placeholder="Your Message" ngModel> </textarea>
+          <div ng-app="myApp" ng-controller="myCtrl">
+            Message: <input ng-model="Your Message">
+            <h1>{{YourMessage}}</h1>
+
+          </div>
           <span class="focus-input3"></span>
         </div>
 
@@ -60,5 +94,3 @@
     </div>
   </div>
 </div>
-
-
